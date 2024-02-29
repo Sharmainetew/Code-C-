@@ -1,0 +1,18 @@
+ài và hàm ignore() để bỏ qua các ký tự phụ bên trái lệnh read trước đó.
+
+Con trỏ vị trí File trong C++
+Cả hai đối tượng istream và ostream đều cung cấp các hàm thành viên để xác định lại vị trí của con trỏ vị trí file (file-position pointer). Các hàm thành viên này là seekg (viết tắt của seek get) cho istream và seekp (viết tắt của seek put) cho ostream trong C++.
+
+Tham số cho seekg và seekp thương lài và hàm ignore() để bỏ qua các ký tự phụ bên trái lệnh read trước đó.
+
+Con trỏ vị trí File trong C++
+Cả hai đối tượng istream và ostream đều cung cấp các hàm thành viên để xác định lại vị trí của con trỏ vị trí file (file-position pointer). Các hàm thành viên này là seekg (viết tắt của seek get) cho istream và seekp (viết tắt của seek put) cho ostream trong C++.
+
+Tham số cho seekg và seekp thương là mộà mộ// xac dinh vi tri byte thu n cua doi tuong file 
+doi_tuong_file.seekg( n ); 
+// xac dinh vi tri n byte ve sau cua doi tuong file 
+doi_tuong_file.seekg( n, ios::cur ); 
+// xac dinh vi tri n byte bat dau tu cuoi cua doi tuong file 
+doi_tuong_file.seekg( n, ios::end ); 
+// xac dinh vi tri tai cuoi doi tuong file 
+doi_tuong_file.seekg( 0, ios::end );
